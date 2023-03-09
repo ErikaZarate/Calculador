@@ -1,32 +1,32 @@
 
 import './App.css'
 function App() {
-
-  return (
-    <div>
-      <h1>Calculator</h1>
+return (
+    <div className='app'>
+      <h1 className='shadow-sm'>Calculator</h1>
       <table>
-        {/* First*/}
+        {/* First row*/}
         <tr>
-          <td colSpan={4}>RESULT</td>
+          < td colSpan={4} style={{border:"1px solid black",textAlign:"end"}}>
+            <h2>0</h2></td>
         </tr>
-        {/* Second*/}
+        {/* Second row*/}
         <tr>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className='btn btn-primary w-75'>
               C
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className='btn btn-primary w-75'>
               /
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className='btn btn-primary '>
               *
             </button>
           </td>
@@ -37,7 +37,7 @@ function App() {
             </button>
           </td>
         </tr>
-        {/* Third*/}
+        {/* Third row*/}
         <tr>
           <td>
             <button type='button'
@@ -64,7 +64,7 @@ function App() {
             </button>
           </td>
         </tr>
-        {/* Fo*/}
+        {/* Fourth row*/}
         <tr>
           <td>
             <button type='button'
@@ -114,18 +114,22 @@ function App() {
         </tr>
         {/* Six*/}
         <tr>
-          <td colSpan={2}>
+        <td>
             <button type="button"
-            className="btn btn-primary">
-              0
+            className="btn btn-primary w-75">
+              {"<-"}
             </button>
           </td>
           <td>
-            <button type='button'
-              className='btn btn-primary'>
-              .
+          <button type='button'
+              className='btn btn-primary w-75'>
+              0
             </button>
           </td>
+          <td> <button type='button'
+              className='btn btn-primary w-75'>
+              .
+            </button></td>
         </tr>
       </table>
     </div>

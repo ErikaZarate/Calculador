@@ -1,5 +1,6 @@
 table{
   width: 400px
+  margin:auto;
 }
 td{
   border: 1px solid black;
@@ -8,4 +9,5 @@ td{
 }
 button{
   margin-top: 5px;
+  box-shadow: 2px 3px #888888;
 }
