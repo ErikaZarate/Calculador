@@ -1,13 +1,19 @@
-table{
-  width: 400px
-  margin:auto;
-}
-td{
-  border: 1px solid black;
+
+.app{
+  text-align: center;
+  }
+  
+  table {
+  width: 400px;
+  margin: auto;
+  }
+  
+  td{
   text-align: center;
   width: 100px;
-}
-button{
+  }
+  
+  button{
   margin-top: 5px;
-  box-shadow: 2px 3px #888888;
-}
+  box-shadow: 2px 3px #000000;
+  }

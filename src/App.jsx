@@ -1,6 +1,15 @@
 
 import './App.css'
+const buttonsClasses="btn btn-primary w-75"
 function App() {
+  const [screen, setScreen] = useState(0)
+  const handleButtonClick=()=>{
+    if(screen==="0"){
+      setScreen(9)
+ }else {
+  setScreen(`${screen}9`)
+ }
+  }
 return (
     <div className='app'>
       <h1 className='shadow-sm'>Calculator</h1>
@@ -14,25 +23,25 @@ return (
         <tr>
           <td>
             <button type='button'
-              className='btn btn-primary w-75'>
+              className={'buttonsClasses'}>
               C
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary w-75'>
+              className={'buttonsClasses'}>
               /
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary '>
+              className={'}buttonsClasses'}>
               *
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
               -
             </button>
           </td>
@@ -41,25 +50,26 @@ return (
         <tr>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
               7
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
               8
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
+                onclick={handleClick}
               9
             </button>
           </td>
           <td rowSpan={2}>
             <button type="button"
-            className="btn btn-primary">
+            className={"buttonsClasses"}>
               +
             </button>
           </td>
@@ -68,19 +78,19 @@ return (
         <tr>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
               4
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
               5
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
               6
             </button>
           </td>
@@ -89,25 +99,25 @@ return (
         <tr>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
               1
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
               2
             </button>
           </td>
           <td>
             <button type='button'
-              className='btn btn-primary'>
+              className={'buttonsClasses'}>
               3
             </button>
           </td>
           <td rowSpan={2}>
             <button type="button"
-            className="btn btn-primary">
+            className={"buttonsClasses"}>
               =
             </button>
           </td>
@@ -116,18 +126,18 @@ return (
         <tr>
         <td>
             <button type="button"
-            className="btn btn-primary w-75">
+            className={"buttonsClasses"}>
               {"<-"}
             </button>
           </td>
           <td>
           <button type='button'
-              className='btn btn-primary w-75'>
+              className={'buttonsClasses'}>
               0
             </button>
           </td>
           <td> <button type='button'
-              className='btn btn-primary w-75'>
+              className={'buttonsClasses'}>
               .
             </button></td>
         </tr>
