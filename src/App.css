@@ -1,19 +1,18 @@
-
 .app{
   text-align: center;
-  }
-  
-  table {
+}
+
+table {
   width: 400px;
   margin: auto;
-  }
-  
-  td{
+}
+
+td{
   text-align: center;
   width: 100px;
-  }
-  
-  button{
+}
+
+button{
   margin-top: 5px;
   box-shadow: 2px 3px #000000;
-  }
+}
